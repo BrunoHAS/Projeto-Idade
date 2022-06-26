@@ -23,15 +23,15 @@ function verificar(){
         }
         else if((idade >= 22) && (idade <= 59)){
             p.innerText = "Você é adulto"
-            img.setAttribute("src","img/adulto.jpg")
+            img.setAttribute("src","img/adultoM.jpg")
         }
         else if((idade >= 60) && (idade <= 100)){
             p.innerText = "Você é idoso"
-            img.setAttribute("src","img/criançaF.jpg")
+            img.setAttribute("src","img/idosoM.jpg")
         }
         else{
             p.innerText = "Você é pó amigo..."
-            img.setAttribute("src","img/criançaF.jpg")
+            img.setAttribute("src","img/póM.jpg")
         }
     }
 
@@ -46,15 +46,15 @@ function verificar(){
         }
         else if((idade >= 22) && (idade <= 59)){
             p.innerText = "Você é adulto"
-            img.setAttribute("src","img/criançaF.jpg")
+            img.setAttribute("src","img/adultoF.jpg")
         }
         else if((idade >= 60) && (idade <= 100)){
             p.innerText = "Você é idoso"
-            img.setAttribute("src","img/criançaF.jpg")
+            img.setAttribute("src","img/idosaF.jpg")
         }
         else{
-            p.innerText = "Você é pó amigo..."
-            img.setAttribute("src","img/criançaF.jpg")
+            p.innerText = "Você é pó amiga..."
+            img.setAttribute("src","img/póF.jpg")
         }
     }
 }
