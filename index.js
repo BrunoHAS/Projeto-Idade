@@ -13,7 +13,11 @@ function verificar(){
     }
 
     if(sexo == "M"){
-        if((idade >= 0) && (idade <= 12)){
+        if(idade < 0){
+            p.innerText = "Isso foi um erro ou você é um viajante temporal?!"
+            img.setAttribute("src","")
+        }
+        else if((idade >= 0) && (idade <= 12)){
             p.innerText = "Você é criança"
             img.setAttribute("src","img/criançaM.jpg")
         }
@@ -31,12 +35,16 @@ function verificar(){
         }
         else{
             p.innerText = "Você é pó amigo..."
-            img.setAttribute("src","img/póM.jpg")
+            img.setAttribute("src","img/cinzas.jpg")
         }
     }
 
     if(sexo == "F"){
-        if((idade >= 0) && (idade <= 12)){
+        if(idade < 0){
+            p.innerText = "Isso foi um erro ou você é um viajante temporal?!"
+            img.setAttribute("src","")
+        }
+        else if((idade >= 0) && (idade <= 12)){
             p.innerText = "Você é criança"
             img.setAttribute("src","img/criançaF.jpg")
         }
@@ -54,7 +62,7 @@ function verificar(){
         }
         else{
             p.innerText = "Você é pó amiga..."
-            img.setAttribute("src","img/póF.jpg")
+            img.setAttribute("src","img/cinzas.jpg")
         }
     }
 }
